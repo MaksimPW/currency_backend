@@ -1,24 +1,21 @@
-# README
+# Install
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+```
+bundle
+rails db:setup
+```
 
-Things you may want to cover:
+# Run
 
-* Ruby version
+```
+rails s
+```
 
-* System dependencies
+# Run cron tasks
 
-* Configuration
+```
+crontab -r
+whenever --update-crontab --set environment='development'
+```
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+> Clear crontab: `crontab -r`
