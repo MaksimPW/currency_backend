@@ -2,7 +2,10 @@
 
 ```
 bundle
+
 rails db:setup
+
+cp config/database.sample.yml config/database.yml
 ```
 
 # Run
